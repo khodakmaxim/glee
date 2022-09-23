@@ -1,0 +1,59 @@
+$accent: #a3bbc8;
+$title: #191919;
+
+
+%dmsans-400{
+    font-family: 'DMSans-Regular', sans-serif;
+    font-weight: 400;
+}
+
+%dmsans-500{
+    font-family: 'DMSans-Medium', sans-serif;
+    font-weight: 500;
+}
+
+%dmsans-700{
+    font-family: 'DMSans-Bold', sans-serif;
+    font-weight: 700;
+}
+
+%poppins-600{
+    font-family: 'Poppins-SemiBold', sans-serif;
+    font-weight: 600;
+}
+
+%poppins-700{
+    font-family: 'Poppins-Bold', sans-serif;
+    font-weight: 700;
+}
+
+%rubik-300{
+    font-family: 'Rubik-Light', sans-serif;
+    font-weight: 300;
+}
+
+%rubik-400{
+    font-family: 'Rubik-Regular', sans-serif;
+    font-weight: 400;
+}
+
+%rubik-500{
+    font-family: 'Rubik-Medium', sans-serif;
+    font-weight: 500;
+}
+
+%rubik-700{
+    font-family: 'Rubik-Bold', sans-serif;
+    font-weight: 700;
+}
+
+%btn{
+padding: 14px 14px 12px 16px;
+color: #fff;
+background-color: $accent;
+font-size: 14px;
+line-height: 21px;
+@extend %dmsans-400;
+cursor: pointer;
+border: none;
+}
