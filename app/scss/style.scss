@@ -4,6 +4,125 @@
 @import 'global'; /*что написать на body, что всем ссылкам указать...*/
 
 
+.header{
+padding: 50px 0 55px;
+&__inner{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+}
+
+.menu{
+    &__list{
+        display: flex;
+        .menu__list-item:nth-child(1){
+            margin-left: 50px;
+        }
+    }
+    
+    &__list-item + .menu__list-item{
+        margin-left: 33px;
+    }
+    &__list-link{
+        font-size: 15px;
+        line-height: 12px;
+        color: #436372;
+        @extend %rubik-500;   
+    }
+
+}
+
+
+.user-nav{
+display: flex;
+&__item + .user-nav__item{
+    margin-left: 80px;
+}
+&__box{
+    display: flex;
+}
+
+&__link{
+    position: relative;
+}
+
+&__link--box1{
+    margin-right: 30px;    
+}
+&__link--box2{
+    margin-left: 30px; 
+}
+
+&__num{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    color: #243f4d;
+    border-radius: 50%;
+    top: -7px;
+    right: -10px;
+    text-align: center;
+    line-height: 16px;
+    font-size: 10px;
+    @extend %dmsans-400;
+    
+}
+
+&__item:nth-child(1){
+    position: relative;
+    &::before{
+    content: '';
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    background-image: url(../images/icons/search-icon-bg.svg);
+    bottom: -13px;
+    left: -17px;
+    z-index: -1;
+    }
+}
+&__item:nth-child(2){
+    position: relative;
+    &::before{
+    content: '';
+    position: absolute;
+    width: 178px;
+    height: 51px;
+    background-image: url(../images/icons/heart-icon-bg.svg);
+    bottom: -13px;
+    left: -40px;
+    z-index: -1;
+    }
+}
+&__item:nth-child(3){
+    position: relative;
+    margin-right: 17px;
+    &::before{
+    content: '';
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    background-image: url(../images/icons/dots-icon-bg.svg);
+    bottom: -13px;
+    left: -15px;
+    z-index: -1;
+    }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
