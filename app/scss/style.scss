@@ -126,7 +126,7 @@ border-bottom: 1px solid #dae4e9;
  &__contact{
     width: 200px;
     margin-right: 100px;
-    margin-top: -12px;
+    margin-top: -15px;
  }
  &__nav{
     width: 170px;
@@ -137,7 +137,7 @@ border-bottom: 1px solid #dae4e9;
 }
 
 &__logo{
-    margin-bottom: 27px;
+    margin-bottom: 17px;
     display: block;
 }
 
@@ -173,7 +173,7 @@ border-bottom: 1px solid #dae4e9;
     line-height: 21px;
     @extend %dmsans-700;
     color: #1f2044;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     text-transform: uppercase;
 }
 
