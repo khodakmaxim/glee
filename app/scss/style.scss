@@ -1,6 +1,7 @@
 @import 'vars'; /*переменные для цвета, шрифтов...*/
 @import 'fonts'; /*шрифты*/
 @import 'reset'; /*reset*/
+@import 'libs'; 
 @import 'global'; /*что написать на body, что всем ссылкам указать...*/
 
 
@@ -110,7 +111,6 @@ display: flex;
     }
 }
 }
-
 
 
 .footer-container{
@@ -243,8 +243,149 @@ color: #7b7b7b;
     padding: 0;
     border: 0;
 }   
+}
+
+
+.top-slider{
+&__inner{
+    padding: 100px 0 45px;
+    background-color: #fcd7b6;
+}
+&__item{
+    display: flex !important;
+    justify-content: space-between;
+}
+
+&__content{
+    padding-top: 125px;
+    padding-left: 300px;
+}
+
+&__img{
+    padding-right: 185px;
+}
+
+&__title{
+    font-size: 72px;
+    line-height: 70px;
+    color: #243f4d;
+    @extend %rubik-500;
+    margin-bottom: 45px;
+}
+
+&__text{
+    font-size: 18px;
+    line-height: 30px;
+    color: #436372;
+    @extend %rubik-400;
+    max-width: 370px;
+    margin-bottom: 45px;
+}
+
+&__link{
+    @extend %arrowbtn;
+}
+
+
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    margin-top: 13px;
+    li{
+        padding: 0 5px;
+        // line-height: 0;
+    button{
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        font-size: 11px;
+        @extend %rubik-500;
+        color: #243f4d;
+        background-color: #fde3cc; 
+        border: none;
+        border-radius: 50%;
+    }
+    &.slick-active{
+        button{
+            background-color: #fff;
+        }
+    }
+}
+}
+
+.info{
+background-color: #fef7f0;
+display: flex;
+// justify-content: space-around;
+&__item{
+    padding: 47px 0;
+border-right: 1px solid #e8e4df; 
+margin-left: 148px;
+padding-right: 152px;
+} 
+
+&__item:nth-child(1){
+padding-left: 76px;
+position: relative;
+&::before{
+content: '';
+position: absolute;
+width: 51px;
+height: 53px;
+background-image: url(../images/icons/24.svg);
+left: 0;
+top: 52px;
+}
 
 }
+
+&__item:nth-child(2){
+padding-top: 58px;
+padding-left: 80px;
+position: relative;
+&::before{
+content: '';
+position: absolute;
+width: 54px;
+height: 36px;
+background-image: url(../images/icons/car.svg);
+left: 0;
+top: 63px;
+}
+}
+
+&__item:nth-child(3){
+padding-left: 89px;
+position: relative;
+border-right: none;
+&::before{
+content: '';
+position: absolute;
+width: 54px;
+height: 52px;
+background-image: url(../images/icons/card.svg);
+left: 0;
+top: 52px;
+}
+
+}
+
+&__item-title{
+    font-size: 18px;
+    color: #414141;
+    @extend %dmsans-700;
+    margin-bottom: 8px;
+}
+
+&__item-text{
+    font-size: 16px;
+    line-height: 30px;
+    @extend %dmsans-400;
+    color: #585858;
+}
+}
+}
+
 
 
 

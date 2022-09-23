@@ -57,3 +57,23 @@ line-height: 21px;
 cursor: pointer;
 border: none;
 }
+
+%arrowbtn{
+    display: inline-block;
+    padding: 25px 100px 21px 24px;
+    background-color: $accent;
+    color: #fff;
+    font-size: 15px;
+    // line-height: ;
+    @extend %rubik-500;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        background-image: url(../images/icons/arrow-right.svg);
+        width: 22px;
+        height: 9px;
+        top: 28px;
+        right: 18px;
+    }
+}
