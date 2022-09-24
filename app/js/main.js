@@ -6,4 +6,10 @@ $(function () {
         autoplay: true,
         autoplaySpeed: 2000
     });
+
+
+    var mixer = mixitup('.product__items');
+    var mixer = mixitup('.design__items');
 });
+
+

@@ -77,3 +77,27 @@ border: none;
         right: 18px;
     }
 }
+
+
+%arrowbtntr{
+    padding: 22px 85px 22px 19px;
+background-color: transparent;
+border: 1px solid #b3b7b5;
+@extend %rubik-500;
+font-size: 15px;
+color: #436372;
+border-radius: 4px;
+position: relative;
+&::after{
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 9px;
+    top: 27px;
+    right: 20px;
+    background-image: url(../images/lamp/arrow-right.svg);
+}
+}
+
+
+
