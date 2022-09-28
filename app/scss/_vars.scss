@@ -57,3 +57,67 @@ line-height: 21px;
 cursor: pointer;
 border: none;
 }
+
+%arrowbtn{
+    display: inline-block;
+    padding: 25px 100px 21px 24px;
+    background-color: $accent;
+    color: #fff;
+    font-size: 15px;
+    // line-height: ;
+    @extend %rubik-500;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        background-image: url(../images/icons/arrow-right.svg);
+        width: 22px;
+        height: 9px;
+        top: 28px;
+        right: 18px;
+    }
+}
+
+
+%arrowbtntr{
+    padding: 22px 85px 22px 19px;
+background-color: transparent;
+border: 1px solid #b3b7b5;
+@extend %rubik-500;
+font-size: 15px;
+color: #436372;
+border-radius: 4px;
+position: relative;
+&::after{
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 9px;
+    top: 27px;
+    right: 20px;
+    background-image: url(../images/lamp/arrow-right.svg);
+}
+}
+
+%arrowbtnteam{
+    display: inline-block;
+    padding: 15px 60px 15px 18px;
+    background-color: #a3bbc8;
+    font-size: 15px;
+    @extend %poppins-600;
+    color: #fff;
+    border-radius: 4px;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 11px;
+        background-image: url(../images/team/arrow-right.svg);
+        right: 26px;
+        top: 21px;
+    }
+}
+
+
+

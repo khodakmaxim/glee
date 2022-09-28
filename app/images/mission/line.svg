@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="2" viewBox="0 0 500 2">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #09316f;
+        fill-rule: evenodd;
+        opacity: 0.1;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M992,872.8h500v2H992v-2Z" transform="translate(-992 -872.812)"/>
+</svg>
