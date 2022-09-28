@@ -99,5 +99,25 @@ position: relative;
 }
 }
 
+%arrowbtnteam{
+    display: inline-block;
+    padding: 15px 60px 15px 18px;
+    background-color: #a3bbc8;
+    font-size: 15px;
+    @extend %poppins-600;
+    color: #fff;
+    border-radius: 4px;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 11px;
+        background-image: url(../images/team/arrow-right.svg);
+        right: 26px;
+        top: 21px;
+    }
+}
+
 
 
